@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-4.1.6.min.css">
+</head>
+
+<body>
+    <div class="box">
+        <header>多家网</header>
+        <section>
+            <nav>
+                <div class="left">
+                    <img src="./assets/Page 1@2x.png" alt="">
+                </div>
+                <div class="center">
+                    <input type="text" placeholder="搜索项目或医院">
+                </div>
+                <div class="right">
+                    <span>北京 V </span>
+                </div>
+            </nav>
+            <div class="swiper-container con">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/banner@2x.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/banner@2x.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/banner@2x.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/banner@2x.png" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="box1">
+                <dl>
+                    <dt><img src="./assets/成单@2x.png" alt=""></dt>
+                    <dd>成单奖励</dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="./assets/推荐@2x.png" alt="">
+                    </dt>
+                    <dd>推荐新人</dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="./assets/收益@2x.png" alt="">
+                    </dt>
+                    <dd>收益滚利</dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="./assets/年度@2x.png" alt="">
+                    </dt>
+                    <dd>阶梯奖励</dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="./assets/客源@2x.png" alt="">
+                    </dt>
+                    <dd>异业拓客</dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="./assets/集采@2x.png" alt="">
+                    </dt>
+                    <dd>集采返现</dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="./assets/新品@2x.png" alt="">
+                    </dt>
+                    <dd>新品悬赏</dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="./assets/期待@2x.png" alt="">
+                    </dt>
+                    <dd>敬请期待</dd>
+                </dl>
+            </div>
+            <div class="box2">
+                <p><i></i><span>金牌商家</span></p>
+                <div class="scroll">
+                    <div class="lag">
+                        <div>悦美国际</div>
+                        <div>美人魅力</div>
+                        <div>萌宠萌娃</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div>首页</div>
+            <div>我的</div>
+        </footer>
+    </div>
+</body>
+<script src="./js/swiper-4.2.2.min.js"></script>
+<script src="./js/better-scroll.js"></script>
+<script>
+    var swiper = new Swiper('.con', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+    var Scroll = new BScroll('.scroll', {
+        scrollX: true,
+        scrollY: false
+    })
+</script>
+
+</html>
